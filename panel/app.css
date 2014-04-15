@@ -1,6 +1,17 @@
 /**
  * From chromium devtools:
  */
+ @font-face {
+  font-family: 'Droid Sans Mono for Powerline';
+  src: url('../fonts/Droid Sans Mono for Powerline.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Droid Sans Mono for Powerline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Droid Sans Mono for Powerline.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Droid Sans Mono for Powerline.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Droid Sans Mono for Powerline.svg#790bc3cf220116af605ebd32c5ad4fe3') format('svg'); /* Legacy iOS */
+  font-style:   normal;
+  font-weight:  400;
+}
+
 
 body {
   cursor: default;
@@ -37,7 +48,7 @@ body.platform-mac .terminal,
 body.platform-mac .monospace,
 body.platform-mac .source-code {
   font-size: 11px !important;
-  font-family: Menlo, monospace;
+  font-family: Droid Sans Mono for Powerline, monospace;
 }
 
 body.platform-mac.platform-mac-tiger code,
